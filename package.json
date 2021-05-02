@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Implémentation de la version mobile de Ohmyfood, un site de foodtech, avec des animations CSS.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MargotFF/MargotFessard_3_23042021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MargotFF/MargotFessard_3_23042021/issues"
+  },
+  "homepage": "https://github.com/MargotFF/MargotFessard_3_23042021#readme",
+  "browserslist": "last 4 versions"
+}
