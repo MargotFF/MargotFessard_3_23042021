@@ -1,0 +1,11 @@
+header {
+    img {
+        width: 45%;
+        display: block;
+        margin: 18px auto;
+        @include from-small-tablet {
+            width: 200px;
+        }
+    }  
+}
+

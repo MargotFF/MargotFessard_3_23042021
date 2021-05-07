@@ -1,0 +1,19 @@
+@mixin block-padding-y {
+    padding: 48px 0;
+}
+
+@mixin block-margin-x {
+    margin: 0 20px;
+}
+
+@mixin from-small-tablet {
+    @media all and (min-width: map-get($breakpoints, small-tablet)){
+        @content;
+    }
+}
+
+@mixin from-big-tablet {
+    @media all and (min-width: map-get($breakpoints, big-tablet)){
+        @content;
+    }
+}
