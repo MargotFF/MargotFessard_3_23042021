@@ -1,17 +1,15 @@
 .tutorial__list {
-    margin: 2rem 0 2rem 0.6rem;
     counter-reset: step;
     @include from-big-tablet {
         display: flex;
         justify-content: space-around;
     }
     .tutorial__step {
+        @include light-grey-background-color;
+        @include box-shadow;
         margin-bottom: 26px;
-        background-color: $light-grey;
         padding: 28px 0;
         border-radius: 25px;
-        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-        font-size: 1.1rem;
         counter-increment: step;
         @include from-big-tablet {
             width: 30%;

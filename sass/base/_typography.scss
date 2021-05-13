@@ -5,4 +5,13 @@ body {
 
 h2 {
     font-size: 1.6rem;
+    font-weight: $medium;
+}
+
+p {
+    font-weight: $thin;
+}
+
+span {
+    font-size: 1.1rem;
 }

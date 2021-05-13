@@ -1,6 +1,5 @@
 .location {
     background-color: #EAEAEA;
-    font-weight: $regular;
     text-align: center;
     padding: 16px 0;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15) inset;
@@ -9,20 +8,17 @@
     }
     span {
         margin-left: 12px;
-        font-size: 1.1rem;
     }
 }
 
 .explore {
-    background-color: $light-grey;
+    @include light-grey-background-color;
     text-align: center;
     padding: 42px 0;
     h2 {
-        font-weight: $medium;
         padding: 0 58px;
     }
     p {
-        font-weight: $thin;
         padding: 14px 20px;
     }
 }
@@ -30,10 +26,33 @@
 .tutorial {
     @include block-padding-y; 
     @include block-margin-x;
-    font-weight: $medium;
     & h2 {
         @include from-big-tablet {
             text-align: center;
         }
+    }
+    .tutorial__list {
+        margin: 2rem 0 2rem 0.6rem;
+    
     }  
+}
+
+.restaurants {
+    @include block-padding-y; 
+    @include light-grey-background-color;
+    h2, .restaurants__list {
+        @include block-margin-x;
+        @include from-big-tablet {
+            margin: 0 50px;
+        }
+    }
+    .restaurants__list {
+        margin-top: 1.5rem;
+        @include from-big-tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 50px;
+            margin-top: 2rem;
+        }
+    }
 }
