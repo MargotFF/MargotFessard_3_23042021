@@ -1,0 +1,22 @@
+footer {
+    background-color: #353535;
+    padding: 25px 25px 35px 25px;
+    font-size: 1rem;
+    @include from-big-tablet {
+        text-align: center;
+    }
+    span, .footer__link, i {
+        color: white;
+    }
+    span {
+        font-family: $headers-font;
+        display: inline-block;
+        padding-bottom: 8px;
+    }
+    .footer__item {
+        padding-top: 9px;
+    }
+    i {
+        padding-right: 7px;
+    }
+}

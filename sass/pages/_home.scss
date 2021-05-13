@@ -31,7 +31,7 @@
             text-align: center;
         }
     }
-    .tutorial__list {
+    &__list {
         margin: 2rem 0 2rem 0.6rem;
     
     }  
@@ -40,13 +40,13 @@
 .restaurants {
     @include block-padding-y; 
     @include light-grey-background-color;
-    h2, .restaurants__list {
+    &__list, h2 {
         @include block-margin-x;
         @include from-big-tablet {
             margin: 0 50px;
         }
     }
-    .restaurants__list {
+    &__list {
         margin-top: 1.5rem;
         @include from-big-tablet {
             display: grid;
