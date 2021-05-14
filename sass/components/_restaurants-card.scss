@@ -34,13 +34,35 @@
             @include text-padding-top;
             font-size: 1.08rem;
         }
-        i {
+        .heart--empty {
             color: #636363;
             font-size: 1.7rem;
-            // &:hover {
-            //     background: linear-gradient(to bottom right, $secondary, $primary);
-            // }
-        }
+            position: relative;
+            &:active {
+                & .heart--filled {
+                    opacity: 1;
+                }
+            }
+            @include from-big-tablet {
+                &:hover {
+                    & .heart--filled {
+                        opacity: 1;
+                    }
+                }
+            }
+            .heart--filled {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            background: -webkit-gradient(linear, right bottom, right top, from($secondary), to($primary));
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+            transition: all 500ms ease-in-out;
+            }
+        }   
     }
     @include from-big-tablet {
         margin-bottom: 0;
