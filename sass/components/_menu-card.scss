@@ -6,6 +6,10 @@
     span {
         display: block;
         width: 90%;
+        @include from-big-tablet {
+            width: 100%;
+            text-align: center;
+        }
     }
     span, .menu__description {
         text-overflow: ellipsis;
@@ -19,9 +23,17 @@
         font-size: 0.95rem;
         .menu__description {
             width: 80%;
+            @include from-big-tablet {
+                width: 100%;
+                padding-bottom: 5px;
+            }
         }
         .menu__price {
             font-weight: $medium;
+        }
+        @include from-big-tablet {
+            @include text-center;
+            flex-direction: column;
         }
     }
 }

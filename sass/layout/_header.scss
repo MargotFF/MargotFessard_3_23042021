@@ -14,11 +14,18 @@ header {
     display: flex;
     align-items: center;
     position: relative;
-    i {
-        color: darken($light-grey, 75%);
-        font-size: 26px;
+    .header__arrow {
         padding-top: 8px;
         position: absolute;
         left: 30px;
-    }
+        transform: scale(1);
+        transition: transform 400ms;
+        &:hover {
+            transform: scale(1.2);
+        }
+        i {
+            color: darken($light-grey, 75%);
+            font-size: 26px;
+        }
+    } 
 }

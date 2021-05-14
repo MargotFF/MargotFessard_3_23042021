@@ -31,6 +31,10 @@
     color: darken($light-grey, 60%);
 }
 
+@mixin text-center {
+    text-align: center;
+}
+
 @mixin from-small-tablet {
     @media all and (min-width: map-get($breakpoints, small-tablet)){
         @content;
@@ -42,3 +46,4 @@
         @content;
     }
 }
+

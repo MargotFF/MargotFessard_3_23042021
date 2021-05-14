@@ -1,5 +1,10 @@
 .banner {
     width: 100%;
+    @include from-big-tablet {
+        height: 24rem;
+        object-fit: cover; 
+        object-position: 0 68%;
+    }
 }
 
 .menu {
@@ -24,6 +29,9 @@
             @include empty-heart-icon;
             padding-right: 20px;
         }
+        @include from-big-tablet {
+            flex-direction: column;
+        }
     }
     &__category {
         display: block;
@@ -34,6 +42,14 @@
             border-bottom: 3px solid $tertiary;
             width: 12%;
             margin: 4px 0 15px 0;
+            @include from-big-tablet {
+                margin: 4px auto 15px auto;
+                width: 20%;
+            }
+        }
+        @include from-big-tablet {
+            @include text-center;
+            padding-top: 40px;
         }
     }
     #menu__button-block {
@@ -42,5 +58,11 @@
             padding: 15px 50px;
             margin: 2rem 0 3.5rem 0;
         }
+    }
+    @include from-big-tablet {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -5rem;
     }
 }
