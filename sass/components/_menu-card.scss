@@ -1,0 +1,27 @@
+.menu__card {
+    @include border-radius;
+    @include box-shadow;
+    @include card-content-padding;
+    margin-bottom: 15px;
+    span {
+        display: block;
+        width: 90%;
+    }
+    span, .menu__description {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; 
+    }
+    .menu__info {
+        @include text-padding-top;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.95rem;
+        .menu__description {
+            width: 80%;
+        }
+        .menu__price {
+            font-weight: $medium;
+        }
+    }
+}

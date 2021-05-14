@@ -3,9 +3,22 @@ header {
         width: 45%;
         display: block;
         margin: 18px auto;
+        padding-top: 16px;
         @include from-small-tablet {
             width: 200px;
         }
     }  
 }
 
+.header__menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    i {
+        color: darken($light-grey, 75%);
+        font-size: 26px;
+        padding-top: 8px;
+        position: absolute;
+        left: 30px;
+    }
+}

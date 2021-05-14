@@ -6,10 +6,6 @@
     margin: 0 20px;
 }
 
-@mixin card-gap {
-    margin-bottom: 20px;
-}
-
 @mixin light-grey-background-color {
     background-color: $light-grey;
 }
@@ -24,6 +20,15 @@
 
 @mixin text-padding-top {
     padding-top: 4px;
+}
+
+@mixin card-content-padding {
+    padding: 14px 22px 14px 18px;
+}
+
+@mixin empty-heart-icon {
+    font-size: 1.9rem;
+    color: darken($light-grey, 60%);
 }
 
 @mixin from-small-tablet {

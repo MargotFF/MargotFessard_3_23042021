@@ -19,7 +19,7 @@
         }
         &:before {
             content: counter(step);
-            background-color: #9356DC;
+            background-color: $primary;
             color: white;
             border-radius: 100%;
             font-size: 80%;
@@ -34,7 +34,7 @@
             background-color: lighten($primary, 35%);
         }
         i {
-            color: #7E7E7E;
+            color: darken($light-grey, 50%);
             font-size: 20px;
             margin-left: 20px;
             margin-right: 22px;

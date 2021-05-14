@@ -1,0 +1,46 @@
+.banner {
+    width: 100%;
+}
+
+.menu {
+    @include light-grey-background-color;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: -3.8rem;
+    position: relative;
+    &__header, &__section {
+        @include block-margin-x;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 34px;
+        h2 {
+            font-family: $headers-font;
+            font-size: 1.65rem;
+        }
+        i {
+            @include empty-heart-icon;
+            padding-right: 20px;
+        }
+    }
+    &__category {
+        display: block;
+        padding-top: 32px;
+        color: darken($light-grey, 60%);
+        font-size: 1rem;
+        &--border {
+            border-bottom: 3px solid $tertiary;
+            width: 12%;
+            margin: 4px 0 15px 0;
+        }
+    }
+    #menu__button-block {
+        text-align: center;
+        #menu__button {
+            padding: 15px 50px;
+            margin: 2rem 0 3.5rem 0;
+        }
+    }
+}

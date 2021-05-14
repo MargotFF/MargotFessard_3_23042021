@@ -14,7 +14,7 @@
     <body>
 
         <!-- HEADER -->
-        <header class="header">
+        <header class="header header__menu">
             <i class="fas fa-arrow-left"></i>
             <img src="images/logo/ohmyfood.png" alt="Logo Ohmyfood">
         </header>
@@ -30,8 +30,9 @@
             </div>
             <div class="menu__section">
                 <span class="menu__category">ENTRÉES</span>
+                <div class="menu__category--border"></div>
                 <div class="menu__card">
-                    <span>Fricassée d'escargot</span>
+                    <span class="menu__main">Fricassée d'escargot</span>
                     <div class="menu__info">
                         <p class="menu__description">Au piment d'Espelette</p>
                         <p class="menu__price">25€</p>
@@ -54,6 +55,7 @@
             </div>
             <div class="menu__section">
                 <span class="menu__category">PLATS</span>
+                <div class="menu__category--border"></div>
                 <div class="menu__card">
                     <span>Filet de boeuf aux herbes</span>
                     <div class="menu__info">
@@ -78,6 +80,7 @@
             </div>
             <div class="menu__section">
                 <span class="menu__category">DESSERTS</span>
+                <div class="menu__category--border"></div>
                 <div class="menu__card">
                     <span>Paris-Brest</span>
                     <div class="menu__info">
@@ -100,7 +103,9 @@
                     </div>
                 </div>
             </div>
-            <button class="button menu__button">Commander</button>
+            <div id="menu__button-block">
+                <button id="menu__button" class="button">Commander</button>
+            </div>
         </section>
 
         <!-- FOOTER -->
