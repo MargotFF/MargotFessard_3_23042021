@@ -46,6 +46,7 @@
                 &:hover {
                     & .heart--filled {
                         opacity: 1;
+                        transition: all 500ms ease-in-out;
                     }
                 }
             }
@@ -59,7 +60,8 @@
             background: -webkit-gradient(linear, right bottom, right top, from($secondary), to($primary));
 	        -webkit-background-clip: text;
 	        -webkit-text-fill-color: transparent;
-            transition: all 500ms ease-in-out;
+            transition: all 200ms ease-in-out;
+            
             }
         }   
     }
