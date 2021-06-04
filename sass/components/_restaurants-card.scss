@@ -34,36 +34,17 @@
             @include text-padding-top;
             font-size: 1.08rem;
         }
-        .heart--empty {
+        .heart {
             @include empty-heart-icon;
-            position: relative;
-            &:active {
-                & .heart--filled {
-                    opacity: 1;
-                }
+            &:hover {
+               @include filled-heart-icon
             }
-            @include from-big-tablet {
-                &:hover {
-                    & .heart--filled {
-                        opacity: 1;
-                        transition: all 500ms ease-in-out;
-                    }
-                }
-            }
-            .heart--filled {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            opacity: 0;
-            background: -webkit-gradient(linear, right bottom, right top, from($secondary), to($primary));
-	        -webkit-background-clip: text;
-	        -webkit-text-fill-color: transparent;
-            transition: all 200ms ease-in-out;
-            
-            }
-        }   
+            // @include from-big-tablet {
+            //     &:hover {
+            //         @include filled-heart-icon
+            //     }
+            // }
+        }    
     }
     @include from-big-tablet {
         margin-bottom: 0;

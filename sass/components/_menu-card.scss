@@ -3,69 +3,57 @@
     @include box-shadow;
     @include card-content-padding;
     margin-bottom: 15px;
-    cursor: pointer;
+    display: flex;
     overflow: hidden;
-    // display: flex;
-    .menu__content {
-        span {
+    cursor: pointer;
+    .menu__info {
+        flex: 1;
+        overflow: hidden; 
+        .menu__main {
+            @include trim-text;
             display: block;
-            width: 90%;
-            @include from-big-tablet {
-                width: 100%;
-                text-align: center;
-            }
         }
-        span, .menu__description {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden; 
-        }
-        .menu__info {
+        .menu__description {
             @include text-padding-top;
-            display: flex;
-            justify-content: space-between;
+            @include trim-text;
             font-size: 0.95rem;
-            .menu__description {
-                width: 80%;
-                @include from-big-tablet {
-                    width: 100%;
-                    padding-bottom: 5px;
-                }
-            }
-            .menu__price {
-                font-weight: $medium;
-            }
-            @include from-big-tablet {
-                @include text-center;
-                flex-direction: column;
-            }
         }
     }
+    .menu__price {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        font-size: 0.95rem;
+        font-weight: $medium;
+        padding-left: 1.4rem;
+    }
+  
     .menu__selection {
-        display: none;
-        // margin: -1rem -5rem -1rem 1rem;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // background-color: $tertiary;
-        // width: 2rem;
-        // border-top-right-radius: 15px;
-        // border-bottom-right-radius: 15px;
-        // .menu__tick{
-        //     display: flex;
-        //     justify-content: center;
-        //     background-color: white;
-        //     padding: 0.25rem;
-        //     border-radius: 50%;
-        //     .fa-check {
-        //         color: $tertiary;
-        //         font-size: 0.8rem;
-        //     }
-        // }
-    } 
-    &:hover {
-        .menu__selection {
-            // margin-right: -2rem;
-        }
+        margin: -1rem -5.4rem -1rem 1.2rem;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $tertiary;
+        transition-duration: 500ms;
+    }
+
+    &:hover .menu__selection {
+    margin-right: -1.4rem;
+    }
+
+    .menu__tick {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0.26rem 0.25rem 0.25rem 0.25rem;
+    border-radius: 100px;
+    }
+    
+    .menu__tick--icon {
+    color: $tertiary;
+    font-size: 0.8rem;
     }
 }
+
+

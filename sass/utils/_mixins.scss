@@ -28,12 +28,29 @@
 
 @mixin empty-heart-icon {
     font-size: 1.9rem;
-    color: darken($light-grey, 60%);
+    color: darken($light-grey, 70%);
+}
+
+@mixin filled-heart-icon {
+    animation: heart-animation 500ms ease-in-out;
+    opacity: 1;
+    background: -webkit-gradient(linear, right bottom, right top, from($secondary), to($primary));              background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+    font-weight: bold;
 }
 
 @mixin text-center {
     text-align: center;
 }
+
+@mixin trim-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+// MEDIAQUERIES MIXINS
 
 @mixin from-small-tablet {
     @media all and (min-width: map-get($breakpoints, small-tablet)){

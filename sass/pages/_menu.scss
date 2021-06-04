@@ -25,9 +25,17 @@
             font-family: $headers-font;
             font-size: 1.65rem;
         }
-        i {
+        .heart {
             @include empty-heart-icon;
             padding-right: 20px;
+            &:hover {
+                @include filled-heart-icon
+            }
+            // @include from-big-tablet {
+            //     &:hover {
+            //         @include filled-heart-icon 
+            //     }
+            // }   
         }
         @include from-big-tablet {
             flex-direction: column;
