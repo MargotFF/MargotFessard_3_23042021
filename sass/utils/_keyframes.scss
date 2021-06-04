@@ -10,12 +10,14 @@
     }
 }
 
-@keyframes tick-box {
+@keyframes menu-card-delay {
     from {
-        margin-right: -5.4rem; 
+        opacity: 0;
+        transform: translateY(20px);
     }
     to {
-        margin-right: -1.4rem;
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
 
