@@ -36,7 +36,7 @@
         align-items: center;
         justify-content: center;
         background-color: $tertiary;
-        transition-duration: 500ms;
+        transition: 500ms;
     }
 
     &:hover .menu__selection {
@@ -59,6 +59,12 @@
     background-color: white;
     padding: 0.26rem 0.25rem 0.25rem 0.25rem;
     border-radius: 100px;
+    transform: rotate(180deg);
+    transition: 600ms 50ms;
+    }
+
+    &:hover .menu__tick {
+        transform: rotate(0);
     }
     
     .menu__tick--icon {
