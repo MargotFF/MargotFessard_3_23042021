@@ -1,3 +1,39 @@
+.loader { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    animation: loader 600ms 2.8s forwards;
+    &__bubbles {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.bubble {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0.7rem;
+    border-radius: 100%;
+    background-image: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
+    animation: bubble-bounce 3s linear;
+    &--purple {
+        background-color: $primary;
+    }
+    &--pink {
+        background-color: $secondary;
+        animation-delay: 0.3s;
+    }
+    &--green {
+        background-color: $tertiary;
+        animation-delay: 0.6s;
+    }
+}
+
 .location {
     background-color: darken($light-grey, 5%);
     text-align: center;
