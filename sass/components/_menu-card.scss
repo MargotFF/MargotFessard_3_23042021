@@ -40,8 +40,18 @@
     }
 
     &:hover .menu__selection {
-    margin-right: -1.4rem;
+        margin-right: -1.4rem; 
     }
+
+    // &:active .menu__selection {
+    //     margin-right: -1.4rem; 
+    // }
+
+    // @include from-big-tablet {
+    //     &:hover .menu__selection {
+    //         margin-right: -1.4rem;
+    //     }
+    // } 
 
     .menu__tick {
     display: flex;

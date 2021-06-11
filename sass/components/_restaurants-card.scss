@@ -37,11 +37,11 @@
         .heart {
             @include empty-heart-icon;
             &:hover {
-               @include filled-heart-icon
+               @include filled-heart-icon;
             }
             // @include from-big-tablet {
             //     &:hover {
-            //         @include filled-heart-icon
+            //         @include filled-heart-icon;
             //     }
             // }
         }    

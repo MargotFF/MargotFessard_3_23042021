@@ -64,3 +64,9 @@
     }
 }
 
+@mixin from-laptop {
+    @media all and (min-width: map-get($breakpoints, laptop)){
+        @content;
+    }
+}
+

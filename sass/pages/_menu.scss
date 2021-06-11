@@ -1,9 +1,10 @@
 .banner {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
     @include from-big-tablet {
         height: 24rem;
-        object-fit: cover; 
-        object-position: 0 68%;
+        object-position: 0 60%;
     }
 }
 
@@ -29,11 +30,11 @@
             @include empty-heart-icon;
             padding-right: 20px;
             &:hover {
-                @include filled-heart-icon
+                @include filled-heart-icon;
             }
             // @include from-big-tablet {
             //     &:hover {
-            //         @include filled-heart-icon 
+            //         @include filled-heart-icon;
             //     }
             // }   
         }
