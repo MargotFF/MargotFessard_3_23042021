@@ -10,11 +10,11 @@ header {
     }  
 }
 
-.header__menu {
+.header-menu {
     display: flex;
     align-items: center;
     position: relative;
-    .header__arrow {
+    &__arrow {
         padding-top: 8px;
         position: absolute;
         left: 30px;

@@ -5,33 +5,33 @@
     z-index: 999;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.85);
     display: flex;
     justify-content: center;
     animation: loader 600ms 2.8s forwards;
-    &__bubbles {
+    &-block {
         display: flex;
         align-items: center;
-    }
-}
-
-.bubble {
-    width: 2.2rem;
-    height: 2.2rem;
-    margin: 0.7rem;
-    border-radius: 100%;
-    background-image: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
-    animation: bubble-bounce 3s linear;
-    &--purple {
-        background-color: $primary;
-    }
-    &--pink {
-        background-color: $secondary;
-        animation-delay: 0.3s;
-    }
-    &--green {
-        background-color: $tertiary;
-        animation-delay: 0.6s;
+        &__bubble {
+            width: 2.2rem;
+            height: 2.2rem;
+            margin: 0.7rem;
+            border-radius: 100%;
+            background-image: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
+            animation: bubble-bounce 3s linear;
+            &--purple {
+                background-color: $primary;
+            }
+            &--pink {
+                background-color: $secondary;
+                animation-delay: 0.3s;
+            }
+            &--green {
+                background-color: $tertiary;
+                animation-delay: 0.6s;
+            }
+        }
+        
     }
 }
 
@@ -40,14 +40,16 @@
     text-align: center;
     padding: 16px 0;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15) inset;
-    i, span {
+    i, h6 {
         color: darken($light-grey, 75%);
     }
     i {
         font-size: 18px;
     }
-    span {
+    h6 {
+        display: inline-block;
         margin-left: 12px;
+        font-weight: $regular;
     }
 }
 
@@ -71,7 +73,7 @@
             text-align: center;
         }
     }
-    &__list {
+    &-list {
         margin: 2rem 0 2rem 0.6rem;
     
     }  

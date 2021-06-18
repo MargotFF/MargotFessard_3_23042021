@@ -1,8 +1,7 @@
-.restaurants__card {
+.restaurants-card {
     @include border-radius;
     @include box-shadow;
     display: block;
-    block-size: fit-content;
     position: relative;
     margin-bottom: 20px;
     img {
@@ -12,7 +11,7 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px; 
     }
-    .restaurants__tag {
+    &__tag {
         background-color: $tertiary;
         color: darken($tertiary, 40%);
         padding: 7px 13px;
@@ -22,7 +21,7 @@
         top: 12px;
         right: 12px;
     }
-    .restaurants__content {
+    &__content {
         @include card-content-padding;
         display: flex;
         justify-content: space-between;
@@ -34,7 +33,7 @@
             @include text-padding-top;
             font-size: 1.08rem;
         }
-        .heart {
+        .heart-icon {
             @include empty-heart-icon;
             &:hover {
                @include filled-heart-icon;

@@ -29,12 +29,13 @@
 @mixin empty-heart-icon {
     font-size: 1.9rem;
     color: darken($light-grey, 70%);
+    cursor: pointer;
 }
 
 @mixin filled-heart-icon {
     animation: heart-animation 500ms ease-in-out;
     opacity: 1;
-    background: -webkit-gradient(linear, right bottom, right top, from($secondary), to($primary));              background-clip: text;
+    background: -webkit-gradient(linear, right bottom, right top, from($secondary), to($primary));         
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; 
     font-weight: bold;

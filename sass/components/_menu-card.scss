@@ -1,4 +1,4 @@
-.menu__card {
+.menu-card {
     @include border-radius;
     @include box-shadow;
     @include card-content-padding;
@@ -7,20 +7,20 @@
     overflow: hidden;
     cursor: pointer;
     animation: menu-card-delay 800ms ease-in-out backwards;
-    .menu__info {
+    &__info {
         flex: 1;
         overflow: hidden; 
-        .menu__main {
+        span {
             @include trim-text;
             display: block;
         }
-        .menu__description {
+        p {
             @include text-padding-top;
             @include trim-text;
             font-size: 0.95rem;
         }
     }
-    .menu__price {
+    &__price {
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
@@ -29,7 +29,7 @@
         padding-left: 1.4rem;
     }
   
-    .menu__selection {
+    &__selection {
         margin: -1rem -5.4rem -1rem 1.2rem;
         width: 4rem;
         display: flex;
@@ -39,21 +39,21 @@
         transition: 500ms;
     }
 
-    &:hover .menu__selection {
+    &:hover &__selection {
         margin-right: -1.4rem; 
     }
 
-    // &:active .menu__selection {
+    // &:active &__selection {
     //     margin-right: -1.4rem; 
     // }
 
     // @include from-big-tablet {
-    //     &:hover .menu__selection {
+    //     &:hover &__selection {
     //         margin-right: -1.4rem;
     //     }
     // } 
 
-    .menu__tick {
+    &__selection-tick {
     display: flex;
     justify-content: center;
     background-color: white;
@@ -63,21 +63,20 @@
     transition: 600ms 50ms;
     }
 
-    &:hover .menu__tick {
+    &:hover &__selection-tick {
         transform: rotate(0);
     }
     
-    .menu__tick--icon {
+    .tick-icon {
     color: $tertiary;
     font-size: 0.8rem;
     }
 }
 
 @for $i from 0 to 10 {
-    .menu__card-#{$i} {
+    .menu-card--#{$i} {
       animation-delay:  #{$i/10}s;
     }
 }
-
 
 

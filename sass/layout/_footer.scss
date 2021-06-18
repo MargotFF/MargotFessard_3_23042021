@@ -1,11 +1,11 @@
-footer {
+.footer {
     background-color: darken($light-grey, 75%);
     padding: 25px 25px 35px 25px;
     font-size: 1rem;
     @include from-big-tablet {
         text-align: center;
     }
-    span, .footer__link, i {
+    &__link, span, i {
         color: white;
     }
     span {
@@ -13,7 +13,7 @@ footer {
         display: inline-block;
         padding-bottom: 8px;
     }
-    .footer__item {
+    &__item {
         padding-top: 9px;
     }
     i {

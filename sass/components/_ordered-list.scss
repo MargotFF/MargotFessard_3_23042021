@@ -1,10 +1,10 @@
-.tutorial__list {
+.tutorial-list {
     counter-reset: step;
     @include from-big-tablet {
         display: flex;
         justify-content: space-around;
     }
-    .tutorial__step {
+    &__step {
         @include light-grey-background-color;
         @include box-shadow;
         margin-bottom: 26px;
