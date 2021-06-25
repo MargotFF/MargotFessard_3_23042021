@@ -26,9 +26,13 @@
             font-family: $headers-font;
             font-size: 1.65rem;
         }
+        @include from-big-tablet {
+            flex-direction: column;
+        }
         .heart-icon {
             @include empty-heart-icon;
             padding-right: 20px;
+            cursor: pointer;
             &:hover {
                 @include filled-heart-icon;
             }
@@ -38,10 +42,45 @@
             //     }
             // }   
         }
-        @include from-big-tablet {
-            flex-direction: column;
-        }
     }
+    // &__icon {
+    //     @include heart-icon;
+    //     &::before {
+    //         opacity: 0;
+    //         content: "";
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         height: 100%;
+    //         width: 100%;
+    //         background:linear-gradient(0deg, $secondary 0%, $primary 100%);
+    //         transition: all 500ms;
+    //     }
+    //     &:hover::before {
+    //         opacity: 1;
+    //     }
+    //     .heart-icon {
+    //         font-size: 1.7rem;
+    //         height: 100%;
+    //         width: 100%;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         mix-blend-mode: lighten;
+    //         background-color: #f6f6f6;
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         transition: all 250ms;
+    //     }
+    //     &:hover {
+    //         .heart-icon {
+    //             &--empty {
+    //                 opacity: 0;
+    //             }
+    //         }
+    //     }
+    // }
     &__category {
         display: block;
         padding-top: 32px;
@@ -75,3 +114,4 @@
         margin-top: -5rem;
     }
 }
+
