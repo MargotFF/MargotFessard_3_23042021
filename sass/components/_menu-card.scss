@@ -42,17 +42,6 @@
     &:hover &__selection {
         margin-right: -1.4rem; 
     }
-
-    // &:active &__selection {
-    //     margin-right: -1.4rem; 
-    // }
-
-    // @include from-big-tablet {
-    //     &:hover &__selection {
-    //         margin-right: -1.4rem;
-    //     }
-    // } 
-
     &__selection-tick {
     display: flex;
     justify-content: center;
